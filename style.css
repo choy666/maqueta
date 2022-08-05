@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    padding: 20px !important;
+}
+a{
+    font-size: 2rem !important;
+}
+.active{
+    background-color: black !important;
+}
+.grid{
+    display: grid;
+    grid-template-areas:
+    "nav nav"
+    "aside main"
+    "footer footer";
+    grid-template-columns: 33.3% auto;
+    grid-template-rows: auto;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    grid-area: nav;
+    background-color: aqua;
+    border-radius: 20px;
+}
+main{
+    grid-area: main;
+    background-color: chartreuse;
+    height: 500px;
+}
+aside{
+    grid-area: aside;
+    background-color: chocolate;
+    height: 500px;
+}
+footer{
+    grid-area: footer;
+    background-color: deeppink;
+    height: 200px;
+}
+body{
+    background: linear-gradient(to right, #48b1bf, #06beb6); 
+}
